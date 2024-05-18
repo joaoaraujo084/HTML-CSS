@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: #000000;
+            text-decoration: none;
+
+        }
+        /*Pseudo-class*/
+        a:visited{
+            color: rgb(160, 0, 0);
+        }
+        /*Pseudo-class*/
+        a:active{
+            color: yellow;
+        }
+        
+        .especial{
+            background-color: #000000;
+            color: rgb(255, 255, 255);
+            
+        }
+        /*Pseudo-class*/
+        .especial:hover{
+            font-weight: bold;
+            font-style: italic;
+        }
+        /*pseudo-element*/
+        .especial::before{
+            content: '⇢';
+            color: lightgray;
+        }
+        /*pseudo-element*/
+        .especial::after{
+            content: '⇠';
+            color: lightgray;
+
+        }
+
+        a.link:hover{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/15%20-Seletores%20personalizados.pdf" target="_blank" class="link">Repositório do Github</a></li>
+        <li><a href="https://www.youtube.com/@jvdesigner084/" target="_blank" class="especial">Canal do Youtube</a></li>
+        <li><a href="https://www.youtube.com/redirect?event=channel_header&redir_token=QUFFLUhqa0lOSEhnbllKdWtzSlBDVW8yX25iLWUzNUV0QXxBQ3Jtc0ttUG40Qk9MY0xLTkk0bzBremVsR2JkVUdFeFFUOE11TWdZdWVUSnRJT19TYVhJTk9JMXJITUdmUnpjbW40SDVSdlZMSVJiSDRRTWlETEpqaXlTb3JhYlB2NFlNRWo0Q1hMSTA2MGcxWFlnRUZfRV95bw&q=https%3A%2F%2Fwww.instagram.com%2Fjvdesigner084%2F" target="_blank">Site do curso em vídeo</a></li>
+    </ul>
+</body>
+</html>

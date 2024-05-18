@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links e âncoras</title>
+</head>
+<body>
+    <h1>Trabalhando com links e âncoras</h1>
+
+    <h2>Links externos</h2>
+        <!--Para criar um link externo usamos a tag <a></a>-->
+        <p><a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf">Clique aqui</a> e acesse o meu repositório no Github</p>
+
+        <!--Podemos definir se o link será aberto na aba atual ou em uma nova aba-->
+        <h2>Links Externos com target</h2>
+
+
+        <!--abrir link na aba atual-->
+        <p>estou criando um portfólio, para acessá-lo <strong>na aba atual</strong> <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" target="_self" rel="pt-br">clique aqui</a></p>
+
+        <!--abrir link em nova aba-->
+        <p>estou criando um portfólio, para acessá-lo <strong>em outra aba</strong> <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" target="_blank" rel="external">clique aqui</a></p>
+        
+
+        <!--podemos indicar a natureza dos link para os mecanismos de busca entenderem a finalidade do link, podemos usar os vaores next, prev, author, external, dofollow, nofollow entre outros...-->
+        <h2>indicar a natureza do link</h2>
+        <p>Podemos indicar a natureza do link usando o atributo rel e usando os valores next, prev, author e external</p>
+
+        <p>Como exemplo, vamos indicar que <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf" rel="external">esse link</a> vai para um site externo</p>
+
+        <!--podemos também abrir outras páginas dentro do nosso site fazendo a ligação entre os arquivos-->
+        <h2>Usando links internos para navegar em páginas</h2>
+
+        <!--aqui vamos redirecionar o usuário para uma segunda página interna dentro do site, o arquivo está na mesma pasta do arquivo index principal-->
+        <p>Esta é a primeira página do site, para acessar a segunda <a href="pag002.html" target="_self" rel="next">clique aqui</a></p>
+
+        <!--aqui vamos redirecinar o usuário para uma terceira página interna dentro do site, o arquivo está em outra pasta, temos que setar o diretório-->
+        <p>acesse também a nossa página de conteúdos clicando <a href="conteudo/pag003.html">aqui</a></p>
+
+        <!--podemos colocar aquivos para donwnload usando a tag <a></a> e usando os parâmetros download="arquivo" e colocando o parâmetro type="tipo do arquivo"-->
+        <h2>Links para downloads</h2>
+        <ul>
+            <li><a href="livros/João_Victor_de_Lima_Araújo.pdf" download="João_Victor_de_Lima_Araújo.pdf" type="application/pdf">Livro em PDF</a></li>
+
+            <li><a href="livros/João_Victor_de_Lima_Araújo.zip" download="João_Victor_de_Lima_Araújo.zip" type="application/zip">Livro em PNG</a></li>
+        </ul>
+</body>
+</html>

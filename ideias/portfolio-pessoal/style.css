@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.destaque-titulo{
+    color: aqua;
+}
+
+.titulo-principal{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagem Flexível</title>
+</head>
+<body>
+    <h1>Imagem cropada</h1>
+    <p>Tá vendo essa imagem abaixo? aumente e diminua o tamanho da janela do navegador para melhorar a experiência&#x1F60E</p>
+
+    <picture>
+        <source media="(max-width: 300px)" srcset="imagens/paisagem-250.jpg" type="image/jpeg">
+        <source media="(max-width: 650px)" srcset="imagens/paisagem-600.jpg" type="image/jpeg">
+        <img src="imagens/paisagem-1279.jpg" alt="imagem tamanho normal">
+    </picture>
+</body>
+</html>

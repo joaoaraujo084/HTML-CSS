@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua a janela do seu navegador</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="imagem tamanho g">
+    </picture>
+
+    <h1>Reproduzindo áudio</h1>
+    <p>Vamos entender como reproduzir um áudio em nosso site</p>
+    <audio preload="metadata" controls loop>
+        <source src="midias/i miss you_Master.wav" type="image/wav">
+        <source src="midias/i-miss-you_Master.mp3" type="audio/mpeg">
+    </audio>
+    <p>Caso o seu navegador não tenha reproduzido o áudio <a href="midias/i-miss-you_Master.mp3" target="_blank" download="i-miss-you_Master.mp3" type="audio/mpeg">clique aqui</a> para baixar</p>
+</body>
+</html>
